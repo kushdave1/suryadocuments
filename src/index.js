@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import './fonts/times-new-roman-grassetto.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Times-Roman-Bold";
+  src: url("./fonts/times-new-roman-grassetto.ttf") format("ttf");
+}
+
