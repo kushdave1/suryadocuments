@@ -69,4 +69,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+"reactPDFDownloadButton/src/components/PDFFile.js" - contains the React PDF File that renders the main Policy Document. 
+"reactPDFDownloadButton/src/components/PDFs/pretty.js" - contains the pretty.json file from here: https://gist.github.com/mynameisthunder/5ba72bf33db350d106da36a71175e020 - as a JS const.
+"reactPDFDownloadButton/src/App.js" - Imports pretty.js and sends it as a prop to PDFFile.js. PDFFile.js breaks down pretty.js components and renders them with formatted content as a PDF File on a web page. 
+
+If you want to render the webpage and have the PDF File be downloaded instead of rendered on the page, uncomment this block of code:       {/* <PDFDownloadLink document={<PDFFile />} filename="FORM">
+      {({ loading }) =>
+        loading ? (
+          <button>Loading Document...</button>
+        ) : (
+          <button>Download</button>
+        )
+      }
+      </PDFDownloadLink> */}
+
+
 
